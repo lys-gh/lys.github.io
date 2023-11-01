@@ -2,31 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全渠道工作平台</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="../06_font&background/css/all.css">
+    <style>
+        .box1{
+            height: 100%;
+        }
+        .logo{
+            width: 336px;
+            height: 120px;
+            background-image: url('./img/111/微信图片_20230901094814.png');
+            background-repeat: no-repeat;
+            margin-left: 450px;
+            /* margin-top: 10px; */
+        }
+        .img{
+            width: 1920px;
+            height: 656px;
+            background-image: url('./img/111/8a962e39691c62d145e210bab626f17.jpg');
+            /* background-size:cover; */
+            /* background-repeat: no-repeat; */
+        }
+
+        .longin{
+            width: 420px;
+            height: 380px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -190px;
+            margin-left: 100px;
+            background-color: #fff;
+            position:fixed;
+        }
+        .longin .text{
+            width: 100%;
+            height: 92px;
+            text-align: center;
+            line-height: 92px;
+            font-size: 24px;
+            color: #fb0;
+            margin-top: 10px;
+            
+        }
+
+        .longin .cellphone{
+
+            padding-left: 35px;
+            margin-top: 10px;
+            /* margin-bottom: 20px; */
+            /* height: 4px; */
+            font-size: 14px;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            /* background-color: #fff; */
+            /* padding: 0 15px 0 30px; */
+
+        }
+        .longin .password{
+            padding-left: 35px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            height: 4px;
+            font-size: 14px;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .longin .submit{
+            padding-left: 50px;
+            margin-top: 50px;
+            position: relative;
+            display: inline-block;
+        }
+        .company{
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 14px;
+            color: rgb(153, 153, 153);
+            line-height: 18px;
+            padding-top: 8px;
+            font-family: 微软雅黑;
+        }
+        #username{
+            width: 300px;
+            height: 44px;
+        }
+        #password{
+            width: 300px;
+            height: 40px;
+        }
+        #submit{
+            width: 310px;
+            height: 40px;
+            background-color:#fb0;
+            border: 0px;
+        }
+        
+    </style>
 </head>
 <body>
-    <!-- 网页头部 -->
-    <header></header>
-    <!-- 网页主体的一部分（一个网页中只有一个main） -->
-    <main></main>
-    <!-- 网页的底部 -->
-    <footer></footer>
-    <!-- 网页中的导航 -->
-    <nav></nav>
-      <!-- 和主体相关的其他内容（侧边栏） -->
-    <aside></aside>
-    <!-- 一个独立的文章 -->
-    <article></article>
-    <!-- 一个独立的区块，上边的标签都不能表示时使用section -->
-    <section></section>
+    <div class="box1">
+        <div class="logo"></div>
+        <div class="img">
+            <div class="longin">
+                <div class="text">账户登录</div>
+                <form action="./target.html">
+                <div class="cellphone">
+                    <i class="fas fa-smile" ></i>
+                    <input type="text" autocomplete="on" placeholder="输入手机号" id="username" name="username">
+                </div>
+                <div class="password">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" autocomplete="off" placeholder="输入密码" id="password" name="password">
+                </div>
 
-    <!-- div没有语义，用来表示一个区块，目前div是主要的布局元素 -->
-    <div></div>
-
-    <!-- span行内元素，没有任何语义，一般用于在网页中选中文字 -->
-    <span></span>
-
+                <!-- <div class="text">
+                    <input type="text" autocomplete="off" placeholder="输入验证码">
+                </div> -->
+                <div class="submit">
+                    <input type="submit" value="登录" id="submit">
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="company">优康宝贝企业管理有限公司</div>
+    </div>
+    
     
 </body>
 </html>
-<h1>我就要写在html外面</h1>
+
